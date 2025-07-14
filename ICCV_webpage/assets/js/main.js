@@ -12,8 +12,7 @@ var KRAFT = KRAFT || {};
                 init: function() {                   
               
                     KRAFT.header.menuItemTrigger();                
-                    KRAFT.header.hamburgerTrigger();
-                    KRAFT.header.hamburgerMenuCloseTrigger();
+                    KRAFT.henenuCloseTrigger();
                     KRAFT.header.dropdownInvert();               
                     KRAFT.header.onePageScroll();
                     KRAFT.header.customPageScroll();
