@@ -1,0 +1,2 @@
+# Adapting Vehicle Detectors for Aerial Imagery to Unseen Domains with Weak Supervision
+This is the project page for the paper: [Adapting Vehicle Detectors for Aerial Imagery to Unseen Domains with Weak Supervision]().
