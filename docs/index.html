@@ -387,76 +387,75 @@
                                                     </div>
 
                                                     <div id="table2" class="tab-content">
-                                                        <style>
-                                                        .dataset-table {
-                                                        border-collapse: collapse;
-                                                        width: 100%;
-                                                        font-family: Arial, sans-serif;
-                                                        font-size: 14px;
-                                                        margin-top: 10px;
-                                                        text-align: center;
-                                                        }
+                                                    <style>
+                                                    .dataset-table {
+                                                    border-collapse: collapse;
+                                                    width: 100%;
+                                                    font-family: Arial, sans-serif;
+                                                    font-size: 14px;
+                                                    margin-top: 10px;
+                                                    text-align: center;
+                                                    }
 
-                                                        .dataset-table th,
-                                                        .dataset-table td {
-                                                        border: 1px solid #aaa;
-                                                        padding: 8px 12px;
-                                                        }
+                                                    .dataset-table th,
+                                                    .dataset-table td {
+                                                    border: 1px solid #aaa;
+                                                    padding: 8px 12px;
+                                                    }
 
-                                                        .dataset-table th {
-                                                        background-color: #f2f2f2;
-                                                        font-weight: bold;
-                                                        }
+                                                    .dataset-table th {
+                                                    background-color: #f2f2f2;
+                                                    font-weight: bold;
+                                                    }
 
-                                                        .section-header {
-                                                        font-style: italic;
-                                                        color: green;
-                                                        font-weight: bold;
-                                                        background-color: #ffffff;
-                                                        text-align: center;
-                                                        }
+                                                    .section-header {
+                                                    font-weight: bold;
+                                                    font-style: italic;
+                                                    color: green;
+                                                    text-align: center;
+                                                    }
 
-                                                        .ours-row td {
-                                                        color: red;
-                                                        text-align: center;
-                                                        }
+                                                    .ours-row td {
+                                                    color: red;
+                                                    text-align: center;
+                                                    }
 
-                                                        .section-header td {
-                                                        text-align: center;
-                                                        }
-                                                        </style>
+                                                    .section-header td {
+                                                    text-align: center;
+                                                    }
+                                                    </style>
 
-                                                        <table class="dataset-table">
-                                                        <thead>
-                                                            <tr>
-                                                            <th>Method</th>
-                                                            <th>Vision Backbone</th>
-                                                            <th>LINZ→UGRC<br>Precision(%)</th>
-                                                            <th>LINZ→UGRC<br>Recall(%)</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                            <td class="section-header" colspan="4"><b><i>Vision Large Language Model</i></b></td>
-                                                            </tr>
-                                                            <tr><td>Gemini 1.5 Flash [55]</td><td>-</td><td>0.9</td><td>14.2</td></tr>
-                                                            <tr><td>Gemini 2.0 Flash-Lite [54]</td><td>-</td><td>2.0</td><td>8.1</td></tr>
-                                                            <tr><td>InternVL3-8B [74]</td><td>InternViT [74]</td><td>4.7</td><td>22.0</td></tr>
-                                                            <tr><td>Qwen2.5-VL-7B [1]</td><td>ViT [1]</td><td>1.1</td><td>9.1</td></tr>
-                                                            <tr><td>DeepSeek-VL2-Tiny [62]</td><td>SigLIP-SO400M [67]</td><td>9.2</td><td>26.8</td></tr>
-                                                            <tr><td>LLaVA-NeXT [29]</td><td>CLIP ViT [41]</td><td>2.2</td><td>8.6</td></tr>
+                                                    <table class="dataset-table">
+                                                    <thead>
+                                                        <tr>
+                                                        <th>Method</th>
+                                                        <th>Vision Backbone</th>
+                                                        <th>LINZ→UGRC<br>Precision(%)</th>
+                                                        <th>LINZ→UGRC<br>Recall(%)</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                        <td class="section-header" colspan="4"><b><i>Vision Large Language Model</i></b></td>
+                                                        </tr>
+                                                        <tr><td>Gemini 1.5 Flash [55]</td><td>-</td><td>0.9</td><td>14.2</td></tr>
+                                                        <tr><td>Gemini 2.0 Flash-Lite [54]</td><td>-</td><td>2.0</td><td>8.1</td></tr>
+                                                        <tr><td>InternVL3-8B [74]</td><td>InternViT [74]</td><td>4.7</td><td>22.0</td></tr>
+                                                        <tr><td>Qwen2.5-VL-7B [1]</td><td>ViT [1]</td><td>1.1</td><td>9.1</td></tr>
+                                                        <tr><td>DeepSeek-VL2-Tiny [62]</td><td>SigLIP-SO400M [67]</td><td>9.2</td><td>26.8</td></tr>
+                                                        <tr><td>LLaVA-NeXT [29]</td><td>CLIP ViT [41]</td><td>2.2</td><td>8.6</td></tr>
 
-                                                            <tr>
-                                                            <td class="section-header" colspan="4"><b><i>Ours</i></b></td>
-                                                            </tr>
-                                                            <tr class="ours-row"><td>Ours</td><td>Faster R-CNN [44]</td><td>63.8</td><td>68.2</td></tr>
-                                                            <tr class="ours-row"><td>Ours</td><td>YOLOv5 [14]</td><td>67.2</td><td>67.3</td></tr>
-                                                            <tr class="ours-row"><td>Ours</td><td>YOLOv8 [43]</td><td>70.0</td><td>76.3</td></tr>
-                                                            <tr class="ours-row"><td>Ours</td><td>ViTDet [24]</td><td>72.0</td><td>67.1</td></tr>
-                                                        </tbody>
-                                                        </table>
+                                                        <tr>
+                                                        <td class="section-header" colspan="4"><b><i>Ours</i></b></td>
+                                                        </tr>
+                                                        <tr class="ours-row"><td>Ours</td><td>Faster R-CNN [44]</td><td>63.8</td><td>68.2</td></tr>
+                                                        <tr class="ours-row"><td>Ours</td><td>YOLOv5 [14]</td><td>67.2</td><td>67.3</td></tr>
+                                                        <tr class="ours-row"><td>Ours</td><td>YOLOv8 [43]</td><td>70.0</td><td>76.3</td></tr>
+                                                        <tr class="ours-row"><td>Ours</td><td>ViTDet [24]</td><td>72.0</td><td>67.1</td></tr>
+                                                    </tbody>
+                                                    </table>
 
-                                                        <p><strong>Table 3.</strong> Comparison between our methods and VLLMs on UGRC dataset. We report the precision and recall metrics.</p>
+                                                    <p><strong>Table 3.</strong> Comparison between our methods and VLLMs on UGRC dataset. We report the precision and recall metrics.</p>
 
                                                 </div>
 
@@ -616,15 +615,7 @@
                                                 <div class="bibtex-wrapper">
                                                     <div class="bibtex-box" id="bibtex">
                                                         <pre style="margin: 0;">
-@article{kay2025align,
-title={Align and Distill: Unifying and Improving Domain Adaptive Object Detection},
-author={Justin Kay and Timm Haucke and Suzanne Stathatos and Siqi Deng and Erik Young and Pietro Perona and Sara Beery and Grant Van Horn},
-journal={Transactions on Machine Learning Research},
-issn={2835-8856},
-year={2025},
-url={https://openreview.net/forum?id=sXSrZ94sR},
-note={Featured Certification}
-}
+Coming Soon
                                                         </pre>
                                                     </div>
 
