@@ -7,7 +7,7 @@ This is the official code for our ICCV 2025 paper:
 Under construction.
 
 ## Data preparation
-Under construction.
+Please follow the instruction [here](Data/README.md).
 
 ## Usage
 ### Stage 1: Synthetic image generation
@@ -17,6 +17,7 @@ Under construction.
 Under construction.
 
 ## Citation
+Please cite the paper if you use the code and datasets.
 ```
 ```
 
