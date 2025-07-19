@@ -2,8 +2,8 @@
 This page introduces how to download and use our released datasets.
 
 ## Introduction
-We introduce two new real-world aerial view datasets
-captured in [Selwyn (New Zealand)](https://data.linz.govt.nz/layer/51926-selwyn-0125m-urban-aerial-photos-2012-2013/) and [Utah (USA)](https://gis.utah.gov/products/sgid/aerial-photography/high-resolution-orthophotography/). Both datasets have ground sampling distance (GSD) of 12.5 cm per px and have been
+We introduce two new real-world aerial view datasets, <b>LINZ</b> and <b>UGRC</b>, 
+captured in [Selwyn (New Zealand)](https://data.linz.govt.nz/layer/51926-selwyn-0125m-urban-aerial-photos-2012-2013/) and [Utah (USA)](https://gis.utah.gov/products/sgid/aerial-photography/high-resolution-orthophotography/), respectively. Both datasets have ground sampling distance (GSD) of 12.5 cm per px and have been
 sampled to *112 px × 112 px* image size. For data annotation, we label only the small vehicle centers. To leverage the abundance of bounding box-based open-source object detection frameworks, we define a fixed-size ground truth bounding box of *42.36 px × 42.36 px* center at each vehicle. Annotations are provided in COCO format *[x, y, w, h]*, where *"small"* in the annotation json files denotes the small vehicle class and *(x, y)* denotes the top-left corner of the bounding box.
 We use *AP50* as evaluation metrics. For more details, please check our paper.
 

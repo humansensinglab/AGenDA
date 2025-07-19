@@ -5,6 +5,15 @@ This is the official code for our ICCV 2025 paper:
 
 ## Requirement
 Under construction.
+```
+# Create virtual environment
+conda create -n agenda python=3.9
+
+# Install torch
+conda install pytorch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 pytorch-cuda=12.1 -c pytorch -c nvidia
+
+# Install dependencies
+```
 
 ## Data preparation
 Please follow the instruction [here](Data/README.md).
