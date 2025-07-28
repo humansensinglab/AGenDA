@@ -120,6 +120,17 @@
 
                                                 <h1 style="text-align: center;">Adapting Vehicle Detectors for Aerial Imagery to Unseen Domains with Weak Supervision</h1>
                                                 <style>
+                                                .author-webpage {
+                                                    color: #1a73e8;
+                                                    text-decoration: none;
+                                                }
+
+                                                .author-webpage:hover {
+                                                    color: #1a73e8;
+                                                    cursor: pointer;
+                                                    text-decoration: none;
+                                                }
+
                                                 .author-email {
                                                     color: #1a73e8;
                                                     cursor: pointer;
@@ -172,14 +183,14 @@
                                                 </style>
 
                                                 <div style="text-align: center; font-size: 22px; line-height: 1.8;">
-                                                <span class="author-email" data-email="xfang2@andrew.cmu.edu" onclick="copyEmail(this)">Xiao Fang<sup>1</sup></span>,&nbsp;
+                                                <a href="https://xiaofang007.github.io/" target="_blank" class="author-webpage">Xiao Fang<sup>1</sup></a>,&nbsp;
                                                 <span class="author-email" data-email="minhyekj@andrew.cmu.edu" onclick="copyEmail(this)">Minhyek Jeon<sup>1</sup></span>,&nbsp;
                                                 <span class="author-email" data-email="zheyangq@andrew.cmu.edu" onclick="copyEmail(this)">Zheyang Qin<sup>1</sup></span>,&nbsp;
                                                 <span class="author-email" data-email="spanev@andrew.cmu.edu" onclick="copyEmail(this)">Stanislav Panev<sup>1</sup></span>,&nbsp;
                                                 <span class="author-email" data-email="celso.m.demelo.civ@army.mil" onclick="copyEmail(this)">Celso de Melo<sup>2</sup></span>,<br>
                                                 <span class="author-email" data-email="shuowen.hu.civ@army.mil" onclick="copyEmail(this)">Shuowen Hu<sup>2</sup></span>,&nbsp;
-                                                <span class="author-email" data-email="shayok@cs.fsu.edu" onclick="copyEmail(this)">Shayok Chakraborty<sup>1,3</sup></span>,&nbsp;
-                                                <span class="author-email" data-email="ftorre@cs.cmu.edu" onclick="copyEmail(this)">Fernando De la Torre<sup>1</sup></span><br>
+                                                <a href="https://shayokch.com/" target="_blank" class="author-webpage">Shayok Chakraborty<sup>1,3</sup></a>,&nbsp;
+                                                <a href="https://www.cs.cmu.edu/~ftorre/" target="_blank" class="author-webpage">Fernando De la Torre<sup>1</sup></a> <br>
 
                                                 <span>
                                                     <sup>1</sup>Carnegie Mellon University,&nbsp;
@@ -208,6 +219,8 @@
                                                     }, 2000); // 2초 후 사라짐
                                                 }
                                                 </script>
+
+                                                <div style="text-align: center; font-size: 22px; color: #333;">ICCV 2025</div>
 
                                                 <style>
                                                 .link-buttons {
@@ -240,9 +253,9 @@
                                                 <!-- 버튼 HTML -->
                                                 <div class="link-buttons">
                                                 <a href="#" target="_blank"><i class="fas fa-file-pdf"></i>Paper</a>
-                                                <a href="#" target="_blank"><i class="fas fa-book"></i>arXiv</a>
+                                                <!-- <a href="#" target="_blank"><i class="fas fa-book"></i>arXiv</a> -->
                                                 <a href="https://github.com/humansensinglab/AGenDA" target="_blank"><i class="fab fa-github"></i>Code</a>
-                                                <a href="" target="_blank"><i class="fas fa-database"></i>Data</a>
+                                                <a href="https://github.com/humansensinglab/AGenDA/tree/main/Data" target="_blank"><i class="fas fa-database"></i>Data</a>
                                                 </div>
                                                                                                                                                 
 
@@ -361,27 +374,27 @@
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
-                                                                <tr><td class="section-header" colspan="4">Source-only</td></tr>
-                                                                <tr><td>Faster-RCNN [43]</td><td>Faster R-CNN</td><td>53.1</td><td>52.5</td></tr>
-                                                                <tr><td>YOLOv5 [14]</td><td>YOLOv5</td><td>63.2</td><td>57.6</td></tr>
-                                                                <tr><td>YOLOv8 [14]</td><td>YOLOv8</td><td>62.9</td><td>71.4</td></tr>
-                                                                <tr><td>ViTDet [24]</td><td>ViTDet</td><td>55.7</td><td>50.4</td></tr>
+                                                                <tr><td class="section-header" colspan="4">Supervised Object detection (Source-only)</td></tr>
+                                                                <tr><td>Faster-RCNN</td><td>Faster R-CNN</td><td>53.1</td><td>52.5</td></tr>
+                                                                <tr><td>YOLOv5 </td><td>YOLOv5</td><td>63.2</td><td>57.6</td></tr>
+                                                                <tr><td>YOLOv8 </td><td>YOLOv8</td><td>62.9</td><td>71.4</td></tr>
+                                                                <tr><td>ViTDet </td><td>ViTDet</td><td>55.7</td><td>50.4</td></tr>
 
                                                                 <tr><td class="section-header" colspan="4">Open-set object detection</td></tr>
-                                                                <tr><td>GLIP-T [22]</td><td>Swin-T [30]</td><td>8.7</td><td>8.7</td></tr>
-                                                                <tr><td>OmDet-Turbo [6]</td><td>Swin-T [30]</td><td>14.4</td><td>14.4</td></tr>
-                                                                <tr><td>OWL-V2 [32]</td><td>CLIP ViT [40]</td><td>17.9</td><td>17.9</td></tr>
+                                                                <tr><td>GLIP-T </td><td>Swin-T </td><td>8.7</td><td>8.7</td></tr>
+                                                                <tr><td>OmDet-Turbo </td><td>Swin-T </td><td>14.4</td><td>14.4</td></tr>
+                                                                <tr><td>OWL-V2 </td><td>CLIP ViT </td><td>17.9</td><td>17.9</td></tr>
 
                                                                 <tr><td class="section-header" colspan="4">Unsupervised domain adaptation object detection</td></tr>
-                                                                <tr><td>SIGMA [23]</td><td>Faster R-CNN</td><td>36.2</td><td>34.8</td></tr>
-                                                                <tr><td>TIA [67]</td><td>Faster R-CNN</td><td>39.0</td><td>42.4</td></tr>
-                                                                <tr><td>Adapt. Teacher [26]</td><td>Faster R-CNN</td><td>29.0</td><td>37.0</td></tr>
-                                                                <tr><td>CycleGAN-Turbo [37]</td><td>YOLOv5</td><td>29.1</td><td>60.8</td></tr>
-                                                                <tr><td>SSDA-YOLO [70]</td><td>YOLOv5</td><td>52.3</td><td>49.6</td></tr>
+                                                                <tr><td>SIGMA </td><td>Faster R-CNN</td><td>36.2</td><td>34.8</td></tr>
+                                                                <tr><td>TIA </td><td>Faster R-CNN</td><td>39.0</td><td>42.4</td></tr>
+                                                                <tr><td>Adapt. Teacher </td><td>Faster R-CNN</td><td>29.0</td><td>37.0</td></tr>
+                                                                <tr><td>CycleGAN-Turbo </td><td>YOLOv5</td><td>29.1</td><td>60.8</td></tr>
+                                                                <tr><td>SSDA-YOLO </td><td>YOLOv5</td><td>52.3</td><td>49.6</td></tr>
 
                                                                 <tr><td class="section-header" colspan="4">Cross domain weakly supervised object detection</td></tr>
-                                                                <tr><td>OCUD [69]</td><td>Faster R-CNN</td><td>63.1</td><td>65.3</td></tr>
-                                                                <tr><td>H2FA R-CNN [63]</td><td>Faster R-CNN</td><td>61.8</td><td>68.3</td></tr>
+                                                                <tr><td>OCUD </td><td>Faster R-CNN</td><td>63.1</td><td>65.3</td></tr>
+                                                                <tr><td>H2FA R-CNN </td><td>Faster R-CNN</td><td>61.8</td><td>68.3</td></tr>
 
                                                                 <tr><td class="ours">Ours</td><td>Faster R-CNN</td><td class="ours">69.3</td><td class="ours">75.5</td></tr>
                                                                 <tr><td class="ours">Ours</td><td>YOLOv5</td><td class="ours">68.8</td><td class="ours">68.5</td></tr>
@@ -444,20 +457,20 @@
                                                         <tr>
                                                         <td class="section-header" colspan="4"><b><i>Vision Large Language Model</i></b></td>
                                                         </tr>
-                                                        <tr><td>Gemini 1.5 Flash [55]</td><td>-</td><td>2.9</td><td>44.5</td></tr>
-                                                        <tr><td>Gemini 2.0 Flash-Lite [54]</td><td>-</td><td>6.6</td><td>26.3</td></tr>
-                                                        <tr><td>InternVL3-8B [74]</td><td>InternViT [74]</td><td>4.7</td><td>22.0</td></tr>
-                                                        <tr><td>Qwen2.5-VL-7B [1]</td><td>ViT [1]</td><td>1.1</td><td>9.1</td></tr>
-                                                        <tr><td>DeepSeek-VL2-Tiny [62]</td><td>SigLIP-SO400M [67]</td><td>9.2</td><td>26.8</td></tr>
-                                                        <tr><td>LLaVA-NeXT [29]</td><td>CLIP ViT [41]</td><td>2.2</td><td>8.6</td></tr>
+                                                        <tr><td>Gemini 1.5 Flash </td><td>-</td><td>2.9</td><td>44.5</td></tr>
+                                                        <tr><td>Gemini 2.0 Flash-Lite </td><td>-</td><td>6.6</td><td>26.3</td></tr>
+                                                        <tr><td>InternVL3-8B </td><td>InternViT </td><td>4.7</td><td>22.0</td></tr>
+                                                        <tr><td>Qwen2.5-VL-7B </td><td>ViT </td><td>0.4</td><td>4.8</td></tr>
+                                                        <tr><td>DeepSeek-VL2-Tiny</td><td>SigLIP-SO400M</td><td>9.2</td><td>26.8</td></tr>
+                                                        <!-- <tr><td>LLaVA-NeXT</td><td>CLIP ViT </td><td>2.2</td><td>8.6</td></tr> -->
 
                                                         <tr>
                                                         <td class="section-header" colspan="4"><b><i>Ours</i></b></td>
                                                         </tr>
-                                                        <tr class="ours-row"><td>Ours</td><td>Faster R-CNN [44]</td><td>63.8</td><td>68.2</td></tr>
-                                                        <tr class="ours-row"><td>Ours</td><td>YOLOv5 [14]</td><td>67.2</td><td>67.3</td></tr>
-                                                        <tr class="ours-row"><td>Ours</td><td>YOLOv8 [43]</td><td>70.0</td><td>76.3</td></tr>
-                                                        <tr class="ours-row"><td>Ours</td><td>ViTDet [24]</td><td>72.0</td><td>67.1</td></tr>
+                                                        <tr class="ours-row"><td>Ours</td><td>Faster R-CNN </td><td>63.8</td><td>68.2</td></tr>
+                                                        <tr class="ours-row"><td>Ours</td><td>YOLOv5 </td><td>67.2</td><td>67.3</td></tr>
+                                                        <tr class="ours-row"><td>Ours</td><td>YOLOv8 </td><td>70.0</td><td>76.3</td></tr>
+                                                        <tr class="ours-row"><td>Ours</td><td>ViTDet</td><td>72.0</td><td>67.1</td></tr>
                                                     </tbody>
                                                     </table>
 
