@@ -259,12 +259,27 @@
                                                 </div>
                                                                                                                                                 
 
-                                    
+                                                <br><br>
+                                                <p style="font-size: 22px; text-align: center;">Can we use synthetic data to improve cross-domain object detection performance for aerial imagery?</p>
+                                                <img src="assets/teaser.png" alt="Teaser Image" style="width: 70%;  display: block; margin: 0 auto;">
+                                                <br><br>
                                                 
-
-            
-                                                <h3 id="model"></h3>
-                                                <br><br><img src="assets/Model_diagram.png" style =  "width: 90%" alt="ROC Curve OvR: Control vs. Rest">
+                                                <p style="font-size: 18px;">
+                                                    <span style="color: gold;"><i class="fas fa-star"></i></span>
+                                                    We harness the power of Stable Diffusion to generate synthetic images and automatically annotate them using cross-attention maps.
+                                                </p>
+                                                <p style="font-size: 18px;">
+                                                    <span style="color: gold;"><i class="fas fa-star"></i></span>
+                                                    Our method outperforms supervised learning on source domain data, weakly supervised adaptation methods, unsupervised domain adaptation methods, and open-set object detectors by 4-23%, 6-10%, 7-40%, and more than 50% AP<sub>50</sub>, respectively.
+                                                </p>
+                                                <p style="font-size: 18px;">
+                                                    <span style="color: gold;"><i class="fas fa-star"></i></span>
+                                                    We introduce two large-scale datasets captured in Utah and Selwyn to advance vehicle detection in aerial imagery.
+                                                </p>
+                                                <br><br>
+                                                
+                                                <h3 id="model">Method Overview</h3>
+                                                <img src="assets/Model_diagram.png" style =  "width: 90%" alt="pipeline">
           
                                                 <br><br><p>
                                                 
@@ -277,9 +292,9 @@
 
                                                 The effectiveness of this pipeline is validated by a significant boost in detector performance. 
                                                 This approach surpasses both baseline detectors trained on source images and open-set detectors inferred directly on the target domain.
-                                                Please see our <a href="https://example.com/your-paper-link" target="_blank" style="color:blue;">paper</a> for more implementation details.
-</p>
+                                                Please see our <a href="" target="_blank" style="color:blue;">paper</a> for more implementation details.
                                                 </p>
+
                                                 <br><br>
                                                 <h3 id="experiment-results">Experiment Results</h3>
 
@@ -462,7 +477,7 @@
                                                         <tr><td>InternVL3-8B </td><td>InternViT </td><td>4.7</td><td>22.0</td></tr>
                                                         <tr><td>Qwen2.5-VL-7B </td><td>ViT </td><td>0.4</td><td>4.8</td></tr>
                                                         <tr><td>DeepSeek-VL2-Tiny</td><td>SigLIP-SO400M</td><td>9.2</td><td>26.8</td></tr>
-                                                        <!-- <tr><td>LLaVA-NeXT</td><td>CLIP ViT </td><td>2.2</td><td>8.6</td></tr> -->
+                                                        <tr><td>LLaVA-NeXT</td><td>CLIP ViT </td><td>5.5</td><td>4.7</td></tr>
 
                                                         <tr>
                                                         <td class="section-header" colspan="4"><b><i>Ours</i></b></td>
