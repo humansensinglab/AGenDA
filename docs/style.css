@@ -91,7 +91,10 @@ a:hover, button:hover, .cbp-filter-item:hover {
 }
 
 body {
-  font-size: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 18px;
   line-height: 1.8;
   font-weight: 400;
   color: #707070;
@@ -130,7 +133,7 @@ h6 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   margin: 0 0 20px;
   padding: 0;
@@ -1589,7 +1592,7 @@ Header Hamburger
 Header General
 --------------------------------------------------------------*/
 #masthead.site-header {
-  width: 100%;
+  width: 1200px;
   z-index: 9;
 }
 #masthead.site-header a {
