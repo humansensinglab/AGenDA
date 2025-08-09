@@ -1,8 +1,8 @@
-# Image generation
+# Data generation
 This page introduces how to fine-tune Stable Diffusion and generate data.
 
 ## Data preparation
-Throughout the process, We randomly sample a balanced subset with roughly equal numbers of car and non-car images from the LINZ and UGRC training sets. The image filenames and their corresponding template prompts are stored as key-value pairs in [train_data.json](train_data.json). The file train_data.json needs to be put under <b>"Data"</b> folder.
+Throughout the process, We randomly sample a balanced subset with roughly equal numbers of images with cars and without cars from the LINZ and UGRC training sets. The image filenames and their corresponding template prompts are stored as key-value pairs in [train_data.json](train_data.json). The file train_data.json needs to be put under <b>"Data"</b> folder.
 
 ## Fine-tune Stable Diffusion
 First, we fine-tune Stable Diffusion on both the LINZ and UGRC datasets to enhance its understanding of real-world aerial imagery.
