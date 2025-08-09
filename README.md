@@ -13,14 +13,15 @@ conda create -n agenda python=3.9
 conda install pytorch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 pytorch-cuda=12.1 -c pytorch -c nvidia
 
 # Install dependencies
+pip install -r requirements.txt
 ```
 
 ## Data preparation
 Please follow the instruction [here](Data/README.md).
 
 ## Usage
-### Stage 1: Synthetic image generation
-Under construction.
+### Stage 1: Data generation
+Please follow the instruction [here](data_generation/README.md)
 
 ### Stage 2: Data annotation
 Under construction.
