@@ -10,7 +10,7 @@ We use *AP50* as evaluation metrics. For more details, please check our paper.
 ## Download
 You can download LINZ and UGRC using this command:
 ```
-wget https://shannon.humansensing.cs.cmu.edu/api/public/dl/IbKPrtJW -O aerial_dataset.zip
+wget https://datastore.shannon.humansensing.cs.cmu.edu/api/public/dl/IbKPrtJW -O aerial_dataset.zip
 ```
 After unzipping the data, please organize it in the following format:
 ```

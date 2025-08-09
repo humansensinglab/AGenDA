@@ -1,0 +1,23 @@
+accelerate launch data_generation/finetune_sd_token.py \
+--pretrained_model_name_or_path output/LINZ-UGRC/sd1.4-token-finetune-stage-one \
+--dataset_folder Data \
+--validation_prompts "An aerial view image with {} cars in {} New Zealand" "An aerial view image with {} cars in {} Utah" \
+--max_train_steps 4500 \
+--validation_steps 300 \
+--checkpointing_steps 300 \
+--train_batch_size 4 \
+--learning_rate 5e-7 \
+--snr_gamma 5 \
+--checkpoints_total_limit 3 \
+--tracker_project_name tensorboard \
+--output_dir output/LINZ-UGRC/sd1.4-token-finetune-stage-two \
+--object_token "new_token" \
+--n_object_embedding 1 \
+--initialize_token "cars" "Utah" "New Zealand" \
+--reg_weight 0.5 \
+--report_to tensorboard \
+--gradient_checkpointing \
+--enable_xformers_memory_efficient_attention \
+--train_unet \
+--with_cross_attn_reg \
+--embedding_path output/LINZ-UGRC/sd1.4-token-finetune-stage-one/learned_embeds_steps_9000.bin \

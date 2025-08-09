@@ -1,0 +1,17 @@
+accelerate launch data_generation/finetune_sd.py \
+--pretrained_model_name_or_path CompVis/stable-diffusion-v1-4 \
+--dataset_folder Data \
+--json_file_name train_data_first_stage.json \
+--max_train_steps 15000 \
+--validation_steps 400 \
+--validation_prompts "An aerial view image with cars in New Zealand" "An aerial view image with cars in Utah" \
+--checkpointing_steps 400 \
+--train_batch_size 32 \
+--learning_rate 1e-6 \
+--snr_gamma 5 \
+--checkpoints_total_limit 3 \
+--tracker_project_name tensorboard \
+--output_dir output/LINZ-UGRC/sd1.4 \
+--report_to tensorboard \
+--gradient_checkpointing \
+--enable_xformers_memory_efficient_attention \
