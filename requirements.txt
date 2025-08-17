@@ -7,8 +7,13 @@ numpy==1.26.0
 opencv-python==4.7.0.72
 opencv-python-headless==4.7.0.72
 huggingface-hub==0.19.3
-pycocotools
+pycocotools==2.0.6
+platformdirs
+openmim
+seaborn
 tensorflow==2.18.0
+tomli
+torchmetrics
 transformers==4.30.2
 xformers==0.0.27
 wandb==0.12.21

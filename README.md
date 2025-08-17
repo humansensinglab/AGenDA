@@ -4,7 +4,6 @@ This is the official code for our ICCV 2025 paper:
 > Xiao Fang, Minhyek Jeon, Zheyang Qin, Stanislav Panev, Celso M de Melo, Shuowen Hu, Shayok Chakraborty, Fernando De la Torre
 
 ## Requirement
-Under construction.
 ```
 # Create virtual environment
 conda create -n agenda python=3.9
@@ -14,6 +13,20 @@ conda install pytorch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 pytorch-cuda=
 
 # Install dependencies
 pip install -r requirements.txt
+
+# Install mmengine and mmcv
+mim install mmengine
+mim install "mmcv>=2.0.0"
+
+# Install mmdetection
+git clone https://github.com/open-mmlab/mmdetection.git
+cd mmdetection
+pip install -v -e .
+
+# Install mmyolo
+git clone https://github.com/open-mmlab/mmyolo.git
+cd mmyolo
+pip install -v -e .
 ```
 
 ## Data preparation
@@ -21,10 +34,10 @@ Please follow the instruction [here](Data/README.md).
 
 ## Usage
 ### Stage 1: Data generation
-Please follow the instruction [here](data_generation/README.md)
+Please follow the instruction [here](data_generation/README.md).
 
 ### Stage 2: Data annotation
-Under construction.
+Please follow the instruction [here](data_annotation/README.md).
 
 ## Citation
 Please cite the paper if you use the code and datasets.
