@@ -16,12 +16,14 @@ In this stage, we further fine-tune two learnable tokens to learn both the foreg
 ```
 bash data_generation/finetune_sd_token.sh
 ```
+The Stable Diffusion <b>checkpoint</b>  can be downloaded [here](https://huggingface.co/xiaofanghf/AGenDA-Finetune-Tokens-Stage1).
 
 ### Second Stage
 In this stage, we fix the learned embeddings and further fine-tune Stable Diffusion.
 ```
 bash data_generation/finetune_sd_token_stage2.sh
 ```
+The Stable Diffusion <b>checkpoint</b>  can be downloaded [here](https://huggingface.co/xiaofanghf/AGenDA-Finetune-Tokens-Stage2).
 
 
 ## Synthetic data generation

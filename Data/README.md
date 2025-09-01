@@ -48,6 +48,7 @@ After unzipping the data, please organize the "<b>real</b>" folder in the follow
                 |-- annotations_coco_FakeBBoxes:42.36px_ForIoU:0.500.json
         
 ```
+We provide the <b>checkpoints</b> of four detectors trained on [LINZ](https://huggingface.co/xiaofanghf/Real-LINZ-Detectors) and [UGRC](https://huggingface.co/xiaofanghf/Real-UGRC-Detectors).
 
 ## Inference
 We provide several examples of using open-set models to directly evaluate performance on our datasets.  

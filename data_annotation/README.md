@@ -1,7 +1,7 @@
 # Data annotation
 This page introduces how to automatically annotate synthetic UGRC images via cross-attention maps.
 
-First, we train detectors on real source domain data.  We provide an example command using faster-rcnn, while other configuration files are put under the [configs](configs) folder.
+First, we train detectors on real source domain data.  We provide an example command using faster-rcnn, while other configuration files are put under the [configs](configs) folder. The <b>checkpoints</b> of four detectors trained on LINZ can be downloaded [here](https://huggingface.co/xiaofanghf/Real-LINZ-Detectors).
 ```
 cd mmdetection
 # Train on real source domain training set
@@ -31,6 +31,7 @@ cd mmdetection
 # Train on synthetic source domain cross-attention maps
 python tools/train.py ../data_annotation/configs/Synthetic_Heatmap/faster-rcnn.py
 ``` 
+The <b>checkpoints</b> of four detectors trained on synthetic LINZ cross-attention maps can be downloaded [here](https://huggingface.co/xiaofanghf/AGenDA-Synthetic-LINZ-Hmap).  
 
 Then, we label synthetic target domain cross-attention maps. Similarly, you need to create an empty annotation file for synthetic target domain cross-attention maps by running [build_empty_annotation.py](build_empty_annotation.py). Next, we provide an example using faster-rcnn: 
 ```
@@ -48,7 +49,8 @@ python data_annotation/refine_label.py \
 --hard_neg_thresh 0.05
 ```
 
-Finally, we train the third detector on synthetic target domain images with pseudo labels, and then test on real target domain data. You also need to run [build_empty_annotation.py](build_empty_annotation.py) to create an annotation file for synthetic target domain background-only images.
+Finally, we train the third detector on synthetic target domain images with pseudo labels, and then test on real target domain data. You also need to run [build_empty_annotation.py](build_empty_annotation.py) to create an annotation file for synthetic target domain background-only images. The <b>checkpoints</b> of four detectors trained on synthetic LINZ cross-attention maps can be downloaded [here](https://huggingface.co/xiaofanghf/AGenDA-Synthetic-UGRC).  
+
 ```
 cd mmdetection
 # Train on synthetic target domain images
@@ -56,7 +58,7 @@ python tools/train.py ../data_annotation/configs/Synthetic_Target/faster-rcnn.py
 ``` 
 Note: If you encounter ViT checkpoint loading issue when using ViTDet model, you might change the "<b>_state_dict</b>" variable in line 434 from ckpt['model'] to ckpt['state_dict'] in [vit.py](../mmdetection/projects/ViTDet/vitdet/vit.py).  
 
-We also provide the synthetic data and pseudo-labels annotated by all four detectors, which can be downloaded following the steps [here](../Data/README.md).
+We also provide the <b>synthetic data and pseudo-labels</b> annotated by all four detectors, which can be downloaded following the steps [here](../Data/README.md).
 
 
 
