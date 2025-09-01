@@ -10,9 +10,10 @@ We use *AP50* as evaluation metrics. For more details, please check our paper.
 ## Download
 You can download LINZ and UGRC using this command:
 ```
-wget https://datastore.shannon.humansensing.cs.cmu.edu/api/public/dl/IbKPrtJW -O aerial_dataset.zip
+wget https://datastore.shannon.humansensing.cs.cmu.edu/api/public/dl/IbKPrtJW -O aerial_vehicle_detection_dataset.zip
 ```
-After unzipping the data, please organize it in the following format:
+The zip file contains two parts. The "<b>real</b>" folder contains Real LINZ and UGRC data, while the "<b>synthetic</b>" folder contains the synthetic data we generate based on the steps [here](../data_generation/README.md) and annotated based on the steps [here](../data_annotation/README.md).
+After unzipping the data, please organize the "<b>real</b>" folder in the following format:
 ```
 |-- Data
     |-- Real

@@ -19,7 +19,7 @@ python data_annotation/build_empty_annotation.py \
     --save-dir Data/Synthetic/LINZ-with-cars/annotations_coco_Empty.json \
     --coco-dir Data/Real/LINZ/test/annotations_coco_FakeBBoxes:42.36px_ForIoU:0.500.json
 ```
-Then we provide an example command using faster-rcnn to label synthetic source domain data. You need to change the <b>data_root_test</b>, <b>test ann_file</b>, and <b>work_dir</b> variables to the ones corresponding to synthetic source domain data.  
+Then we provide an example command using faster-rcnn to label synthetic source domain data. You need to change the "<b>data_root_test</b>", "<b>test ann_file</b>", and "<b>work_dir</b>" variables to the ones corresponding to synthetic source domain data.  
 ```
 python tools/test.py ../data_annotation/configs/Real_Source/faster-rcnn.py YOUR_CHECKPOINT_PATH --out ../work_dirs/faster-rcnn/LINZ2UGRC/faster-rcnn_train_real_linz_test_syn_linz/prediction.pkl
 ``` 
@@ -54,7 +54,9 @@ cd mmdetection
 # Train on synthetic target domain images
 python tools/train.py ../data_annotation/configs/Synthetic_Target/faster-rcnn.py
 ``` 
-Note: If you encounter ViT checkpoint loading issue when using ViTDet model, you might change the <b>_state_dict</b> variable in line 434 from ckpt['model'] to ckpt['state_dict'] in [vit.py](../mmdetection/projects/ViTDet/vitdet/vit.py).
+Note: If you encounter ViT checkpoint loading issue when using ViTDet model, you might change the "<b>_state_dict</b>" variable in line 434 from ckpt['model'] to ckpt['state_dict'] in [vit.py](../mmdetection/projects/ViTDet/vitdet/vit.py).  
+
+We also provide the synthetic data and pseudo-labels annotated by all four detectors, which can be downloaded following the steps [here](../Data/README.md).
 
 
 

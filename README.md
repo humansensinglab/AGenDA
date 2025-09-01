@@ -37,7 +37,9 @@ Please follow the instruction [here](Data/README.md).
 Please follow the instruction [here](data_generation/README.md).
 
 ### Stage 2: Data annotation
-Please follow the instruction [here](data_annotation/README.md).
+Please follow the instruction [here](data_annotation/README.md).  
+
+We upload all checkpoints [here](https://huggingface.co/collections/xiaofanghf/agenda-68a1f2b4f46e657d68ae0875). For more usage details, please go through each stage.
 
 ## Citation
 Please cite the paper if you use the code and datasets.

@@ -2,7 +2,7 @@
 This page introduces how to fine-tune Stable Diffusion and generate data.
 
 ## Data preparation
-Throughout the process, We randomly sample a balanced subset with roughly equal numbers of images with cars and without cars from the LINZ and UGRC training sets. The image filenames and their corresponding template prompts are stored as key-value pairs in [train_data.json](train_data.json). The file train_data.json needs to be put under <b>"Data"</b> folder.
+Throughout the process, We randomly sample a balanced subset with roughly equal numbers of images with cars and without cars from the LINZ and UGRC training sets. The image filenames and their corresponding template prompts are stored as key-value pairs in [train_data.json](train_data.json). The file train_data.json needs to be put under "<b>Data</b>" folder.
 
 ## Fine-tune Stable Diffusion
 First, we fine-tune Stable Diffusion on both the LINZ and UGRC datasets to enhance its understanding of real-world aerial imagery.
@@ -82,4 +82,5 @@ python data_generation/postprocess_heatmap.py \
     --stack-heatmap-save-path daam_stack_heatmaps \
     --inv-heatmap-save-path daam_new_token_v2_inv_heatmaps
 ```
+You can obtain the synthetic data we generate following the data downloading process [here](../Data/README.md).
 
