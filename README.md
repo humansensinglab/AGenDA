@@ -44,14 +44,13 @@ We upload all checkpoints [here](https://huggingface.co/collections/xiaofanghf/a
 ## Citation
 Please cite the paper if you use the code and datasets.
 ```
-@misc{fang2025adaptingvehicledetectorsaerial,
-      title={Adapting Vehicle Detectors for Aerial Imagery to Unseen Domains with Weak Supervision}, 
-      author={Xiao Fang and Minhyek Jeon and Zheyang Qin and Stanislav Panev and Celso de Melo and Shuowen Hu and Shayok Chakraborty and Fernando De la Torre},
-      year={2025},
-      eprint={2507.20976},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2507.20976}, 
+@InProceedings{adapting,
+    author    = {Fang, Xiao and Jeon, Minhyek and Qin, Zheyang and Panev, Stanislav and De Melo, Celso and Hu, Shuowen and Chakraborty, Shayok and De La Torre, Fernando},
+    title     = {{Adapting Vehicle Detectors for Aerial Imagery to Unseen Domains with Weak Supervision}},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2025},
+    pages     = {8088-8099}
 }
 ```
 
